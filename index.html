@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Галерея: Главная, Архив, Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Моя галерея</h1>
+      <nav class="tabs-nav">
+        <a href="#home" class="tab-link active" data-tab="home">Главная</a>
+        <a href="#archive" class="tab-link" data-tab="archive">Архив</a>
+        <a href="#feedback" class="tab-link" data-tab="feedback">Обратная связь</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="tab-pane active">
+        <h2>Свежие фото и видео</h2>
+        <div id="gallery"></div>
+      </section>
+
+      <section id="archive" class="tab-pane">
+        <h2>Архив</h2>
+        <p>Здесь будут старые фото и видео. Пока пусто — добавляй!</p>
+      </section>
+
+      <!-- Вкладка: Обратная связь -->
+<section id="feedback" class="tab-pane">
+  <h2>Обратная связь</h2>
+  <!-- ⚠️ ВСТАВЬ СЮДА СВОЮ ССЫЛКУ ИЗ FORMSPREE -->
+  <!-- Пример: https://formspree.io/f/abc123de -->
+  <form action="https://formspree.io/f/xkjgqlrq" method="POST">
+    <div class="form-group">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required placeholder="Как к вам обращаться">
+    </div>
+    <div class="form-group">
+      <label for="email">Email для ответа:</label>
+      <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+    </div>
+    <div class="form-group">
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Напишите, что думаете о галерее"></textarea>
+    </div>
+    <button type="submit">Отправить сообщение</button>
+  </form>
+</section>
